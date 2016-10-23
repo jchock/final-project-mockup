@@ -15,6 +15,20 @@ FlowRouter.route('/list', {
   },
 });
 
+FlowRouter.route('/sessions', {
+  name: 'Sessions_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Sessions_Page' });
+  },
+});
+
+FlowRouter.route('/create', {
+  name: 'Create_Session_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Create_Session_Page' });
+  },
+});
+
 FlowRouter.route('/add', {
   name: 'Add_Stuff_Page',
   action() {
