@@ -1,0 +1,44 @@
+<template name="Login_Page">
+  <div class="ui container">
+    {{#if currentUser}}
+      <p>You're logged in.</p>
+    {{else}}
+      <h2 class="ui header">Login</h2>
+      {{> login}}
+    <br>
+      <p style="margin-top: 10px;">OR</p>
+    <br>
+      {{> register}}
+    {{/if}}
+  </div>
+</template>
+
+<template name="login">
+  <form class="ui form login-form">
+    <h4 class="ui dividing header">Login</h4>
+    <div class="field"><label>Email</label></div>
+    <div class="field">
+      <input type="text" name="loginEmail" id="loginEmail" placeholder="foo@bar.com">
+    </div>
+    <div class="field"><label>Password</label></div>
+    <div class="field">
+      <input type="text" name="loginPassword" id="loginPassword" placeholder="password">
+    </div>
+    <button class="ui button" type="submit">Login</button>
+  </form>
+</template>
+
+<template name="register">
+  <form class="ui form register-form">
+    <h4 class="ui dividing header">Register</h4>
+    <div class="field"><label>Email</label></div>
+    <div class="field">
+      <input type="text" name="registerEmail" id="registerEmail" placeholder="foo@bar.com">
+    </div>
+    <div class="field"><label>Password</label></div>
+    <div class="field">
+      <input type="text" name="registerPassword" id="registerPassword" placeholder="password">
+    </div>
+    <button class="ui button" type="submit">Register</button>
+  </form>
+</template>
