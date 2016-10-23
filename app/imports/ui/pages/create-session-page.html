@@ -1,0 +1,29 @@
+<template name="Create_Session_Page">
+  <div class="ui container">
+    <h2 class="ui dividing header">Create a Session</h2>
+    {{#if currentUser}}
+      <p>Please log in first.</p>
+    {{else}}
+      <div class="ui container">
+        <form class="ui form session-form">
+          <div class="three fields">
+            <div class="field">
+              <label>Date</label>
+              <input type="text" name="date" id="date" placeholder="MM/DD/YY">
+            </div>
+            <div class="field">
+              <label>Time</label>
+              <input type="text" name="time" id="time" placeholder="ex: 12:30 PM">
+            </div>
+            <div class="field">
+              <label>Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="subject">
+            </div>
+          </div>
+          <button class="ui button" type="submit">Create</button>
+          <button class="ui now button" type="submit">Right Now!</button>
+        </form>
+      </div>
+    {{/if}}
+  </div>
+</template>
