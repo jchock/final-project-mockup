@@ -5,9 +5,13 @@ import './edit-stuff-page.html';
 import './edit-stuff-page.js';
 
 import './landing-page.html';
+import './landing-page.js';
 
 import './login-page.html';
 import './login-page.js';
 
 import './list-stuff-page.html';
 import './list-stuff-page.js';
+
+import './sessions.html';
+import './sessions.js';

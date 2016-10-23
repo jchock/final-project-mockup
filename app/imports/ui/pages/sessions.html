@@ -1,31 +1,41 @@
 <template name="Sessions_Page">
   <div class="ui container">
-    {{#if Template.subscriptionsReady}}
+    <h2 class="ui dividing header">Sessions</h2>
       <table style="margin-top: 20px;" class="ui celled table ">
         <thead>
         <tr>
           <th>Date</th>
           <th>Time</th>
           <th>Topic</th>
-          <th>Phone</th>
-          <th>Email</th>
+          <th>Edit</th>
         </tr>
         </thead>
         <tbody>
-        {{#each contact in contactList}}
+        <tr>
+          <td>Right Now!</td>
+          <td>Right Now!</td>
+          <td>Meteor</td>
+          <td><a href="#">Edit</a></td>
+        </tr>
           <tr>
-            <td>{{contact.first}}</td>
-            <td>{{contact.last}}</td>
-            <td>{{contact.address}}</td>
-            <td>{{contact.telephone}}</td>
-            <td>{{contact.email}}</td>
-            <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
+            <td>10/29/16</td>
+            <td>12 PM</td>
+            <td>Meteor</td>
+            <td><a href="#">Edit</a></td>
           </tr>
-        {{/each}}
+          <tr>
+            <td>10/30/16</td>
+            <td>12 PM</td>
+            <td>HTML</td>
+            <td><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>10/31/16</td>
+            <td>12 PM</td>
+            <td>CSS</td>
+            <td><a href="#">Edit</a></td>
+          </tr>
         </tbody>
       </table>
-    {{else}}
-      {{> Loading}}
-    {{/if}}
   </div>
 </template>
