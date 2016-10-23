@@ -4,6 +4,9 @@ import './add-stuff-page.js';
 import './edit-stuff-page.html';
 import './edit-stuff-page.js';
 
+import './calendar-page.html';
+import './calendar-page.js';
+
 import './create-session-page.html';
 import './create-session-page.js';
 

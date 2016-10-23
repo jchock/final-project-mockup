@@ -51,3 +51,6 @@ autopublish
 insecure
 
 
+fullcalendar:fullcalendar
+momentjs:moment
+rzymek:fullcalendar
