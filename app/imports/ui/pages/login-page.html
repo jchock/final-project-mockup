@@ -5,9 +5,9 @@
     {{else}}
       <h2 class="ui header">Login</h2>
       {{> login}}
-    <br>
+      <br>
       <p style="margin-top: 10px;">OR</p>
-    <br>
+      <br>
       {{> register}}
     {{/if}}
   </div>
@@ -18,11 +18,17 @@
     <h4 class="ui dividing header">Login</h4>
     <div class="field"><label>Email</label></div>
     <div class="field">
-      <input type="text" name="loginEmail" id="loginEmail" placeholder="foo@bar.com">
+      <div class="ui left icon input">
+        <i class="user icon"></i>
+        <input type="text" name="loginEmail" id="loginEmail" placeholder="foo@bar.com">
+      </div>
     </div>
     <div class="field"><label>Password</label></div>
     <div class="field">
-      <input type="text" name="loginPassword" id="loginPassword" placeholder="password">
+      <div class="ui left icon input">
+        <i class="lock icon"></i>
+        <input type="text" name="loginPassword" id="loginPassword" placeholder="Password">
+      </div>
     </div>
     <button class="ui button" type="submit">Login</button>
   </form>
@@ -33,11 +39,17 @@
     <h4 class="ui dividing header">Register</h4>
     <div class="field"><label>Email</label></div>
     <div class="field">
-      <input type="text" name="registerEmail" id="registerEmail" placeholder="foo@bar.com">
+      <div class="ui left icon input">
+        <i class="user icon"></i>
+        <input type="text" name="registerEmail" id="registerEmail" placeholder="foo@bar.com">
+      </div>
     </div>
     <div class="field"><label>Password</label></div>
     <div class="field">
-      <input type="text" name="registerPassword" id="registerPassword" placeholder="password">
+      <div class="ui left icon input">
+        <i class="lock icon"></i>
+        <input type="text" name="registerPassword" id="registerPassword" placeholder="Password">
+      </div>
     </div>
     <button class="ui button" type="submit">Register</button>
   </form>
