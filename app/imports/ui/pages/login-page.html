@@ -8,6 +8,10 @@
       <br>
       <p style="margin-top: 10px;">OR</p>
       <br>
+      {{> adminLogin}}
+      <br>
+      <p style="margin-top: 10px;">OR</p>
+      <br>
       {{> register}}
     {{/if}}
   </div>
@@ -31,6 +35,27 @@
       </div>
     </div>
     <button class="ui button" type="submit">Login</button>
+  </form>
+</template>
+
+<template name="adminLogin">
+  <form class="ui form login-form">
+    <h4 class="ui dividing header">Admin Login</h4>
+    <div class="field"><label>Email</label></div>
+    <div class="field">
+      <div class="ui left icon input">
+        <i class="user icon"></i>
+        <input type="text" name="loginEmail" id="loginEmail" placeholder="foo@bar.com">
+      </div>
+    </div>
+    <div class="field"><label>Password</label></div>
+    <div class="field">
+      <div class="ui left icon input">
+        <i class="lock icon"></i>
+        <input type="text" name="loginPassword" id="loginPassword" placeholder="Password">
+      </div>
+    </div>
+    <button class="ui button" type="submit">Login (Admin)</button>
   </form>
 </template>
 

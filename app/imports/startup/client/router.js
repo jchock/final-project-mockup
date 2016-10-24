@@ -57,6 +57,20 @@ FlowRouter.route('/rankings', {
   },
 });
 
+FlowRouter.route('/user', {
+  name: 'User_Home_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'User_Home_Page' });
+  },
+});
+
+FlowRouter.route('/admin', {
+  name: 'Admin_Home_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Admin_Home_Page' });
+  },
+});
+
 FlowRouter.route('/add', {
   name: 'Add_Stuff_Page',
   action() {
