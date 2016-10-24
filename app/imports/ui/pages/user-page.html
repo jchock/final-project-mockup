@@ -1,3 +1,25 @@
 <template name="User_Page">
+  <div class="ui page grid one column">
+    <div class="column">
+      {{> userProfile}}
+    </div>
+  </div>
+</template>
 
+<template name="userProfile">
+  <div class="ui top attached secondary segment">
+    <h3 class="ui centered header">Your Profile</h3>
+  </div>
+  <div class="ui bottom attached segment">
+    <div class="ui center aligned grid">
+      <div class="column">
+        <img class="ui small circular centered image" src="/images/avatar-image.png">
+        <div class="inline display" style="display: inline;">
+          <p>John Doe</p>
+          <p>Current Score: 100</p>
+          <p>More information about John</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>

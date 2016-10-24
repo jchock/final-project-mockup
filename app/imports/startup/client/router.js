@@ -43,10 +43,17 @@ FlowRouter.route('/calendar', {
   },
 });
 
-FlowRouter.route('/users/:_id', {
+FlowRouter.route('/users', {
   name: 'User_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'User_Page' });
+  },
+});
+
+FlowRouter.route('/rankings', {
+  name: 'Rankings_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Rankings_Page' });
   },
 });
 
