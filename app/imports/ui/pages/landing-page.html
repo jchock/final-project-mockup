@@ -1,11 +1,19 @@
 <template name="Landing_Page">
   <div class="ui middle aligned centered grid text container">
-
-    <div style="margin-top: 20px;" class="ui header">
-      <h1>Welcome to Study Buddy!</h1>
-      <h2>Held in ICSpace (Post 318B)</h2>
-      <h2><a href="{{pathFor 'Login_Page'}}">Sign up</a> and schedule a study sesh today!</h2>
+    <div class="sixteen wide column">
+      <div style="margin-top: 20px;" class="ui header">
+        <h1>Welcome to Study Buddy!</h1>
+      </div>
     </div>
-
+    <div style="margin-top: -5px" class="eight wide column">
+      <h2>Tired of getting bad grades?</h2>
+      <img class="ui image" src="/images/failing.png">
+    </div>
+    <div style="margin-top: -5px" class="eight wide column">
+      <h2>Study Buddy will help you ace your classes!</h2>
+      <img class="ui image" src="/images/a-grade.jpg">
+    </div>
+    <h2 style="margin-top: -5px">Held in ICSpace (Post 318B)</h2>
+    <h2 style="margin-top: -10px"><a href="{{pathFor 'Login_Page'}}">Sign up</a> and schedule a study sesh today!</h2>
   </div>
 </template>
