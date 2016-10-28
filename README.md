@@ -1,7 +1,7 @@
 # final-project-mockup
 
-<img src="doc/landing_page.JPG">
-<img src="doc/create_session_page.JPG">
+<img src="doc/landing_page2.JPG">
+<img src="doc/create_session_page2.JPG">
 <img src="doc/sessions_page.JPG">
 <img src="doc/calendar_page.JPG">
 <img src="doc/rankings_page.JPG">
